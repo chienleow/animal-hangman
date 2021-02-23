@@ -19,12 +19,12 @@ def hangman():
     # getting user input
     while len(word_letters) > 0 and lives > 0:
         # letters used
-        print('You have used these letters: ', ' '.join(used_letters))
+        print('\nYou have', lives, 'lives left and you have used these letters: ', ' '.join(used_letters))
         # what the current word is (eg. C - T)
         word_list = [letter if letter in used_letters else '-' for letter in animal]
-        print('Current word: ', ' '.join(word_list))
+        print('\nCurrent word: ', ' '.join(word_list))
         
-        user_letter = input('Enter a letter:').upper()
+        user_letter = input('\nEnter a letter:').upper()
         if user_letter in alphabet - used_letters:
             used_letters.add(user_letter)
             if user_letter in word_letters:
@@ -37,9 +37,9 @@ def hangman():
         else:
             print('\nInvalid character, please try again.')
     if lives == 0:
-        print('You died, sorry. The animal was', animal)
+        print('\nYou died, sorry. The animal was', animal)
     else:
-        print('Congratulations! You have guessed the animal', animal, '!!')
+        print('\nCongratulations! You have guessed the animal', animal, '!!')
 
 if __name__ == '__main__':
     hangman()
