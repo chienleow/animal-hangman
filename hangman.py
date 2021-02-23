@@ -4,6 +4,8 @@ import string
 
 def get_animal(animals):
     animal = random.choice(animals)
+    # while ' ' in animal:
+    #     animal = random.choice(animals)
     return animal.upper()
 
 def hangman():
@@ -26,12 +28,12 @@ def hangman():
             if user_letter in word_letters:
                 word_letters.remove(user_letter)
         elif user_letter in used_letters:
-            print('You have already used that character, please try again.')
+            print('\nYou have already used that letter, guess another letter.')
         else:
-            print('Invalid character, please try again.')
+            print('\nInvalid character, please try again.')
 
-user_input = input('Enter a letter:')
-print(user_input)
+if __name__ == '__main__':
+    hangman()
 
 
 
