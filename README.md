@@ -9,7 +9,8 @@ Getting Started with Python in VS Code [Tutorial](https://code.visualstudio.com/
 
 ## Usage
 
-To run Animal Hangman Game from your command line, type the below and follow the on screen prompts.(replace *python3* with your python version)
+To run Animal Hangman Game from your command line, type the below and follow the on screen prompts. 
+(Replace *python3* with your python version)
 
     $ python3 hangman.py
     
