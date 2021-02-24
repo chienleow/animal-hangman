@@ -5,7 +5,7 @@
 
 ## Installation
 
-Getting Started with Python in VS Code [Tutorial](https://code.visualstudio.com/docs/python/python-tutorial)
+Getting Started with Python in VS Code - [Tutorial](https://code.visualstudio.com/docs/python/python-tutorial)
 
 ## Usage
 
