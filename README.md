@@ -1,4 +1,4 @@
-# Python CLI Project: Animal Hangman Game
+# Python CLI App - Play Hangman: Animals Game
 
 ## Built With
 - [Python](https://www.python.org/)
