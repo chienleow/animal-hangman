@@ -1,7 +1,11 @@
-# Python CLI Project: Animal Hangman Game
+# Python CLI App - Play Hangman: Animals Game
+This app allows users to play hangman with common animal names.
 
 ## Built With
 - [Python](https://www.python.org/)
+
+## Demo
+- [Walkthrough](https://youtu.be/SgeLizxsnA8)
 
 ## Installation
 
