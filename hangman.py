@@ -22,6 +22,7 @@ def hangman():
         print('\nYou have', lives, 'lives left and you have used these letters: ', ' '.join(used_letters))
         # what the current word is (eg. C - T)
         word_list = [letter if letter in used_letters else '-' for letter in animal]
+        print(display_hangman(lives))
         print('\nCurrent word: ', ' '.join(word_list))
         
         user_letter = input('\nEnter a letter:').upper()
@@ -43,7 +44,7 @@ def hangman():
 
 def display_hangman(lives):
     stages = [
-            """
+        0:  """
                 ---------
                 |       |
                 |       O
@@ -53,7 +54,7 @@ def display_hangman(lives):
                 ---
             """,
 
-            """
+        1:  """
                 ---------
                 |       |
                 |       O
@@ -63,7 +64,7 @@ def display_hangman(lives):
                 ---
             """,
 
-            """
+        2:  """
                 ---------
                 |       |
                 |       O
@@ -73,7 +74,7 @@ def display_hangman(lives):
                 ---
             """,
 
-            """
+        3:  """
                 ---------
                 |       |
                 |       O
@@ -83,17 +84,27 @@ def display_hangman(lives):
                 ---
             """,
 
-            """
+        4:  """
                 ---------
                 |       |
                 |       O
-                |   
+                |       |/
                 |       
                 |      
                 ---
             """,
 
-            """
+        5:  """
+                ---------
+                |       |
+                |       O
+                |      
+                |       
+                |      
+                ---
+            """,
+
+        6:  """
                 ---------
                 |       |
                 |       
