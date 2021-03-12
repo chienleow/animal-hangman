@@ -16,6 +16,8 @@ def hangman():
 
     lives = 6
 
+    print("Let's play Hangman!")
+
     # getting user input
     while len(word_letters) > 0 and lives > 0:
         # letters used
@@ -114,6 +116,7 @@ def display_hangman(lives):
                 ---
             """
     ]
+    return stages[lives]
 
 if __name__ == '__main__':
     hangman()
