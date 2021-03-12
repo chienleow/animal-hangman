@@ -44,7 +44,7 @@ def hangman():
 
 def display_hangman(lives):
     stages = [
-        0:  """
+            """
                 ---------
                 |       |
                 |       O
@@ -54,7 +54,7 @@ def display_hangman(lives):
                 ---
             """,
 
-        1:  """
+            """
                 ---------
                 |       |
                 |       O
@@ -64,7 +64,7 @@ def display_hangman(lives):
                 ---
             """,
 
-        2:  """
+            """
                 ---------
                 |       |
                 |       O
@@ -74,7 +74,7 @@ def display_hangman(lives):
                 ---
             """,
 
-        3:  """
+            """
                 ---------
                 |       |
                 |       O
@@ -84,7 +84,7 @@ def display_hangman(lives):
                 ---
             """,
 
-        4:  """
+            """
                 ---------
                 |       |
                 |       O
@@ -94,7 +94,7 @@ def display_hangman(lives):
                 ---
             """,
 
-        5:  """
+            """
                 ---------
                 |       |
                 |       O
@@ -104,7 +104,7 @@ def display_hangman(lives):
                 ---
             """,
 
-        6:  """
+            """
                 ---------
                 |       |
                 |       
