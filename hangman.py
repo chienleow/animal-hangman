@@ -1,6 +1,9 @@
 import random
 from animals import animals
 import string
+import colorama
+from colorama import Fore
+colorama.init()
 
 def get_animal(animals):
     animal = random.choice(animals)
