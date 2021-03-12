@@ -19,18 +19,18 @@ def hangman():
 
     lives = 6
 
-    print("Let's play Hangman!")
+    print(Fore.MAGENTA + "\n-----Let's play Hangman!-----")
 
     # getting user input
     while len(word_letters) > 0 and lives > 0:
         # letters used
-        print('\nYou have', lives, 'lives left and you have used these letters: ', ' '.join(used_letters))
+        print(Fore.BLUE + '\nYou have', lives, 'lives left and you have used these letters: ', ' '.join(used_letters))
         # what the current word is (eg. C - T)
         word_list = [letter if letter in used_letters else '-' for letter in animal]
-        print(display_hangman(lives))
-        print('\nCurrent word: ', ' '.join(word_list))
+        print(Fore.WHITE + display_hangman(lives))
+        print(Fore.YELLOW + '\nCurrent word: ', ' '.join(word_list))
         
-        user_letter = input('\nEnter a letter:').upper()
+        user_letter = input(Fore.CYAN + '\nEnter a letter:').upper()
         if user_letter in alphabet - used_letters:
             used_letters.add(user_letter)
             if user_letter in word_letters:
@@ -39,13 +39,13 @@ def hangman():
                 lives = lives - 1
                 print('\nYour letter,', user_letter, 'is not in the word.')
         elif user_letter in used_letters:
-            print('\nYou have already used that letter, guess another letter.')
+            print(Fore.RED + '\n-----You have already used that letter, guess another letter.-----')
         else:
-            print('\nInvalid character, please try again.')
+            print(Fore.RED + '\n-----Invalid character, please try again.-----')
     if lives == 0:
-        print('\nYou died, sorry. The animal was', animal)
+        print(Fore.RED + '\nYou died, sorry. The animal was', animal)
     else:
-        print('\nCongratulations! You have guessed the animal', animal, '!!')
+        print(Fore.GREEN + '\nCongratulations! You have guessed the animal', animal, '!!')
 
 def display_hangman(lives):
     stages = [
