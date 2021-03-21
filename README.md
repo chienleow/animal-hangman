@@ -6,7 +6,7 @@ This app allows users to play hangman with common animal names.
     - Python Package Index (PyPi): [Colorama](https://pypi.org/project/colorama/)
 
 ## Demo
-- [Walkthrough](https://youtu.be/SgeLizxsnA8)
+- [Walkthrough](https://youtu.be/z1iiUGnS19A)
 
 ## Installation
 
